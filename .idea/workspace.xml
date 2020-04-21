@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91fa760-b07c-4494-bbac-7941f829723c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lxm/designMode/chain_责任链/MainV2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,7 +27,7 @@
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lxm/designMode/chain_责任链/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -37,6 +37,19 @@
                 <element signature="class#SensitiveFilter#0" />
                 <element signature="class#Filter#0" />
                 <element signature="class#Msg#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lxm/designMode/chain_责任链/MainV2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#100#101#0" expanded="true" />
+                <element signature="e#136#137#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/lxm/designMode/strategy/comparable/Cat.java" />
         <option value="$PROJECT_DIR$/src/main/java/lxm/designMode/strategy/comparable/Comparable.java" />
         <option value="$PROJECT_DIR$/src/main/java/lxm/designMode/strategy_策略模式/comparable/Comparable.java" />
         <option value="$PROJECT_DIR$/src/main/java/lxm/designMode/strategy_策略模式/comparator_策略模式/Cat.java" />
@@ -122,6 +134,7 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lxm/designMode/chain_责任链/MainV2.java" />
       </list>
     </option>
   </component>
@@ -216,6 +229,16 @@
             </path>
             <path>
               <item name="lxmCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lxmCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lxm" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
+              <item name="chain_责任链" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lxmCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -251,14 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Final_sychronized" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lxm.thread.sychronized.Final_sychronized" />
-      <module name="lxmCode01" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MainV2">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lxm.designMode.strategy_策略模式.comparator_策略模式.Main" />
       <module name="lxmCode01" />
@@ -270,6 +286,13 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="lxm.designMode.chain_责任链.Main" />
+      <module name="lxmCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lxm.designMode.chain_责任链.MainV2" />
       <module name="lxmCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -338,11 +361,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainV2" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.T01_AtomicInteger" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.T" />
-        <item itemvalue="Application.Final_sychronized" />
       </list>
     </recent_temporary>
   </component>
@@ -387,13 +410,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="初次提交代码到Gitup上" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lxm/designMode/factory_工厂模式/抽象工厂/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lxm/designMode/factory_工厂模式/抽象工厂/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -741,6 +757,17 @@
             <element signature="class#SensitiveFilter#0" />
             <element signature="class#Filter#0" />
             <element signature="class#Msg#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lxm/designMode/chain_责任链/MainV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#136#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
