@@ -8,3 +8,10 @@ DEBUG操作
 > Run to Cursor (Alt + F9)：运行到光标处，你可以将光标定位到你需要查看的那一行，然后使用这个功能，代码会运行至光标行，而不需要打断点。
 > Evaluate Expression (Alt + F8)：计算表达式，后面章节详细说明。
 
+gitup上传操作
+
+
+快捷键
+main |  sout |
+alt + insert : set get等方法
+alt + Enter :提示
