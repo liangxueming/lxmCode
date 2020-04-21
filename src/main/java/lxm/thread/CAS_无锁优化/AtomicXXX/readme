@@ -1,0 +1,33 @@
+CAS(无锁优化 自旋 还有人叫做：乐观锁)   用的都是Unsafe类
+
+    Compare And Set
+    cas(V,Expected,NewValue)
+        - if V==E
+            V=New
+            otherwise try again or fail
+        - CPU原语支持
+    ABA问题
+        - 加verion
+        - A 1.0
+        - B 2.0
+        - A 3.0
+        - cas (version)
+        - 如果基础类型，无所谓  - 引用类型，你的女朋友跟你复合。中间经历了别的男人
+
+Unsafe类
+    直接操作内存
+        allocateMemory putXX freeMemory pageSize
+    直接生成类实例
+        allocateInstance
+    直接操作类或实例变量
+        objectFieldOffset
+        getInt
+        getObject
+    CAS相关操作
+        weakCompareAndSetObject Int Long     (弱指针 :回收时效率比较高)
+
+
+拓展
+    语言  分配内存    释放内存
+    C       malloc      free
+    C++     new         delete
