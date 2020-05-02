@@ -1,4 +1,5 @@
 CAS(无锁优化 自旋 还有人叫做：乐观锁)   用的都是Unsafe类
+    Compare and swap
 
     Compare And Set
     cas(V,Expected,NewValue)
