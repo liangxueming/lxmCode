@@ -10,9 +10,9 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
- * Predicate<T>  boolean  test();
- * Consumer<T>  void accept();
- * Function<T, R>  apply ()
+ * Predicate<T>  boolean test(T t);
+ * Consumer<T>  void accept(T t);
+ * Function<T, R>   R apply(T t);
  */
 public class Demo01 {
     public static void main(String[] args) throws IOException {
