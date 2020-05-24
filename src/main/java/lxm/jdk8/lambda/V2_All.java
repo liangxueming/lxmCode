@@ -19,13 +19,13 @@ public class V2_All {
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1); numbers.add(2); numbers.add(3); numbers.add(4); numbers.add(5);
         /**
-         * V1 实现Predicate<Integer>接口
+         * V1 实现Predicate<T>接口
          */
         filter(numbers,new Test());
         /**
-         * V2 匿名类
+         * V2 匿名类 Predicate<Integer>
          */
-        filter(numbers,new Test() {
+        filter(numbers,new Predicate<Integer>() {
             //方法名必须和Predicate接口里定义的方法名一样
             public boolean test(Integer i) {
                 return i % 1==0;
