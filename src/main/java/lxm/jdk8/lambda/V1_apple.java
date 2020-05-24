@@ -2,9 +2,11 @@ package lxm.jdk8.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toSet;
 
 /**
  * @author: liangxm
@@ -16,6 +18,7 @@ public class V1_apple {
     public static void main(String[] args) {
         List<Apple> checkList = new ArrayList<>();
         checkList.add( new Apple().setColor("green").setWeight(100));
+        checkList.add( new Apple().setColor("red").setWeight(60));
         checkList.add( new Apple().setColor("red").setWeight(80));
 
         /**
@@ -52,7 +55,29 @@ public class V1_apple {
                 (Apple a) -> a.getWeight() > 60).collect(toList());
         System.out.println("parallelStream:"+collect1);
 
+        /**
+         * V6 list 过滤之后 转换为set输出
+         */
+        Set<Apple> collect2 = checkList.parallelStream().filter(
+                (Apple a) -> a.getWeight() > 60  ).collect(toSet());
+        System.out.println("toSet():"+collect2);
 
+        /**
+         * V6 checkList.sort 根据重量排序
+         */
+        checkList.sort((o1,o2)->{
+            if (o1.getWeight()==(o2.getWeight())) {
+                return 0;
+            } else if (o1.getWeight() > o2.getWeight()) {
+                //o2为前值，o1为后值；这里理解为：后值比前值大，则不交换位置,等价从小到大排序
+                //如果这里返回 -1，则为从大到小排序
+                return 1;
+            } else {
+                //后值比前值小，则交换位置
+                return -1;
+            }
+        });
+        checkList.forEach(e -> System.out.print(e+" "));
     }
 
 
