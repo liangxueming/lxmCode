@@ -2,6 +2,7 @@ package lxm.jdk8.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * Predicate  谓语，述语  使……基于；断言；暗示
@@ -34,7 +35,8 @@ public class V2_All {
         /**
          * V3 lanmbda
          */
-        filter(numbers,(Integer i) -> i % 2==0);
+        filter(numbers,(Integer i) ->  i % 2==0);
+        filter(numbers,(Integer i) ->{return i%2==0;});
 
     }
 
@@ -49,10 +51,14 @@ public class V2_All {
         return result ;
     }
 }
-
-interface Predicate<T> {
-    boolean test(T t);
-}
+/**
+ * FunctionalInterface
+ * @param <T>
+ */
+//@FunctionalInterface
+//interface Predicate<T> {
+//    boolean test(T t);
+//}
 class Test implements Predicate<Integer>{
 
     @Override
