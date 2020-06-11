@@ -2,6 +2,8 @@ package lxm.designMode.proxy_代理;
 
 import java.util.Random;
 
+import static lxm.PubUtils.T.sleep;
+
 /**
  * @author: liangxm
  * @Date: 2020/5/22 - 05 - 22 - 17:18
@@ -45,11 +47,7 @@ class Tank3 implements Movable3{
     @Override
     public void move() {
         System.out.println("tank go ....");
-        try {
-            Thread.sleep(new Random().nextInt(10000));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(new Random().nextInt(10000));
     }
 }
 interface Movable3{

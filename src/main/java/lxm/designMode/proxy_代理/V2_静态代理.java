@@ -2,6 +2,8 @@ package lxm.designMode.proxy_代理;
 
 import java.util.Random;
 
+import static lxm.PubUtils.T.sleep;
+
 /**
  * @author: liangxm
  * @Date: 2020/5/22 - 05 - 22 - 17:04
@@ -11,7 +13,8 @@ import java.util.Random;
  */
 public class V2_静态代理 {
     public static void main(String[] args) {
-       new Tank2TimeProxy(new Tank2()).move();
+
+        new Tank2TimeProxy(new Tank2()).move();
     }
 }
 
@@ -34,11 +37,7 @@ class Tank2 implements Movable2{
     @Override
     public void move() {
         System.out.println("Tank  go ......");
-        try {
-            Thread.sleep(new Random().nextInt(10000));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(new Random().nextInt(10000));
     }
 }
 
