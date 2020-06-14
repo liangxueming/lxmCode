@@ -38,6 +38,28 @@ class LinkedList_ implements Collection_ {
 
     @Override
     public Iterator_ iterator() {
-        return null;
+        return new LinkedListIterator();
+    }
+    private class LinkedListIterator implements Iterator_{
+
+        @Override
+        public boolean hasNext() {
+            return size>0;
+        }
+
+        @Override
+        public Object next() {
+            size--;
+            return tail.next;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "LinkedList_{" +
+                "head=" + head +
+                ", tail=" + tail +
+                ", size=" + size +
+                '}';
     }
 }
